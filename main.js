@@ -147,7 +147,7 @@ function speak(string) {
 let person = prompt("Salut tu t'appeles comment?");
   
   if (person == null || person == "") {
-    confirm(txt = "Bonjour ! Je m'appelle Sniffany  " + String.fromCodePoint(0x1F354) + "   j'ai besoin de toi " + String.fromCodePoint(0x1F62C));
+    confirm(txt = "Bonjour ! Je m'appelle Sniffany  " + String.fromCodePoint(0x1F354));
   } else {
-    confirm(txt = "Bonjour " + person + "! Je m'appelle Sniffany  " + String.fromCodePoint(0x1F354) + "   j'ai besoin de toi " + String.fromCodePoint(0x1F62C));
+    confirm(txt = "Bonjour " + person + "! Je m'appelle Sniffany  " + String.fromCodePoint(0x1F354));
   }

@@ -23,7 +23,7 @@ const trigger = [
 
 const reply = [ 
   ["Hello!", "Bonjour!", "Ola chico!", "Wesh gros!","Kikou,lol"],
-  ["Moyen...et toi?","Super et toi?","Génial, et toi","Je me sens trop mal et toi?"],
+  ["Moyen...et toi?","Super et toi?","Oklm, et toi","Je me sens trop mal et toi?"],
   ["Pas grand chose","Je vais aller dormir","Franchement, je ne sais pas","Je me touche"],
   ["Le meme age que le silicium", "Je suis super vielle"],
   ["je suis un french robot super nul"],
@@ -77,15 +77,14 @@ function output(input) {
    // For example 'tell me a story' becomes 'tell me story'
    // Or 'i feel happy' -> 'happy'
   text = text
-    .replace(/é/g, "e")
-    .replace(/ée/g, "ee")
-    .replace(/ê/g, "e")
-    .replace(/è/g, "e")
-    .replace(/ç/g, "c")
-    .replace(/le/g, " ")
-    .replace(/la/g, " ")
+    .replace(/é/g,"e")
+    .replace(/ée/g,"ee")
+    .replace(/ê/g,"e")
+    .replace(/è/g,"e")
+    .replace(/ç/g,"c")
+    .replace(/le/g," ")
+    .replace(/la/g," ")
     .replace(/as tu/g, " ")
-    .replace(/ça/g, " ")
     .replace(/t'/g, " ")
     .replace(/l'/g, " ")
 
@@ -119,12 +118,12 @@ function addChat(input, product) {
   const mainDiv = document.getElementById("main");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
-  userDiv.innerHTML = `Habibi: <span id="user-response">${input}</span>`;
+  userDiv.innerHTML = `<span id="user-response" > &#128590 ${input} </span>`;
   mainDiv.appendChild(userDiv);
 
   let botDiv = document.createElement("div");
   botDiv.id = "bot";
-  botDiv.innerHTML = `Sniffany: <span id="bot-response">${product}</span>`;
+  botDiv.innerHTML = `<span id="bot-response" > &#127828 ${product}</span>`;
   mainDiv.appendChild(botDiv);
   speak(product);
 }
@@ -145,10 +144,10 @@ function speak(string) {
 
 //Welcome popup
 
-var person = prompt("Please enter your name");
+let person = prompt("Salut tu t'appeles comment?");
   
   if (person == null || person == "") {
-    confirm(txt = "Bonjour " + "mon ami(e)" + "! Je m'appelle Sniffany 💖... je n'arrive pas à dormir  😪, tu es là??");
+    confirm(txt = "Bonjour ! Je m'appelle Sniffany  " + String.fromCodePoint(0x1F354) + "   j'ai besoin de toi " + String.fromCodePoint(0x1F62C));
   } else {
-    confirm(txt = "Bonjour " + person + "! Je m'appelle Sniffany 💖... je n'arrive pas à dormir  😪, tu es là?? Parle avec moi");
+    confirm(txt = "Bonjour " + person + "! Je m'appelle Sniffany  " + String.fromCodePoint(0x1F354) + "   j'ai besoin de toi " + String.fromCodePoint(0x1F62C));
   }

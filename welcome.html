@@ -4,15 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="/welcome.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-       
-
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.min.css"/>
     </head>
         <body id="welcomepage">
             <!--whistle sound-->
-            <audio id="audio" src="/whistle.mp3" controls autoplay onloadeddata="setHalfVolume()"></audio>
-           
+            <audio id="audio" src="whistle.mp3" controls autoplay onloadeddata="setHalfVolume()"></audio>
             <!--Welcome bubble-->
             <div class="comments position-fixed">
                 <div class="col-sm-12 col-md-4 comment bubble"> 
@@ -21,13 +18,12 @@
                     </p>
                 </div>
                 <div class="comments text-center">
-                    <a class="btn position-relative text-center" href="/index.html" role="button">Ok! J'arrive</a>
+                    <a class="btn position-relative text-center" href="index.html" role="button">Ok! J'arrive</a>
                 </div>
                 
             </div>
-             <!--Welcome bubble-->
-            
-             <script>
+            <!--Welcome bubble-->
+        <script>
                 function setHalfVolume() {
                     var myAudio = document.getElementById("audio");
                     myAudio.volume = 0.2;

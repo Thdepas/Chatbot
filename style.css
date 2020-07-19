@@ -89,16 +89,21 @@ margin-bottom: 20px;
 	margin: 0 auto;
 	width: 70%;
 
+
 }
 
 .comments .comment p{
-	margin: 0 0 10px 0;
+	margin: 0 0 40px 0;
 	font-size: 15px;
-    font-family: "Helvetica Neue", sans-serif;
+	font-family: "Helvetica Neue", sans-serif;
+	text-align: justify;
+	padding-left: 150px;
+	
+
 }
 
 .bubble{
-	background-color:  #ee008f3a;
+	background-color:  #eb71ba;
 	border-radius: 30px;
 	color: #222;
 	padding: 20px;
@@ -112,7 +117,7 @@ margin-bottom: 20px;
 	width: 0;
 	height: 0;
 	border-top: 13px solid transparent;
-	border-right: 26px solid #ee008f3a;
+	border-right: 26px solid #eb71ba;
 	border-bottom: 23px solid transparent;
 	margin: 13px 0 0 -35px;
 	animation: pulse 0.6s ease-in;
@@ -131,7 +136,7 @@ margin-bottom: 20px;
 
 .img-thumbnail{
 
-	width: 35%;
+	width: 30%;
 	
 }
 

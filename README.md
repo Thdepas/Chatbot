@@ -1,4 +1,4 @@
-# [Sniffany Chatbot](https://thdepas.github.io/Chatbot/)
+# [Sniffany Chatbot](https://thdepas.github.io/Sniffany_chatbot/)
 
 * Exercise: create a chatbot
 * Repository: [KhadijaEK/chatbot](https://github.com/KhadijaEK/chatbot)
